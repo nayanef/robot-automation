@@ -1,11 +1,12 @@
 ***Settings***
 Library         AppiumLibrary
 Resource        ../Resources/global.robot
-Resource        ../Keywords/addition.robot
+Resource        ../Keywords/multiplication.robot
 
 ***Test Cases***
 
-Simple addition
+
+Simple multiplication
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
@@ -13,26 +14,21 @@ Simple addition
     ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
     ...                 udid=emulator-5554
 
-    Add operation
+    Multiply operation
     Show result
     Check result
 
     Capture Page Screenshot
     Close Application
 
-
-Single parenthesis addition error
-
+# Multiplicando um número grande o bastante para gerar um resultado que tem que ser apresentado em notação científica
+Multiplication with a scientific notation result
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
     ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
     ...                 udid=emulator-5554
-
-    Single parenthesis operation
+    Multiply big numbers
     Show result
-    Check undefined result
-
-    Capture Page Screenshot
-    Close Application
+    Check if result is in scientific notation
