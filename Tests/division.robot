@@ -19,3 +19,19 @@ Division by zero
 
     Capture Page Screenshot
     Close Application
+
+
+Simple division
+    Open Application    http://localhost:4723/wd/hub
+    ...                 automationName=UiAutomator2
+    ...                 platformName=Android
+    ...                 deviceName=Emulator
+    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 udid=emulator-5554
+
+    Simple division
+    Show result
+    Check simple division
+
+    Capture Page Screenshot
+    Close Application
