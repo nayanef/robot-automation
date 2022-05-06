@@ -45,6 +45,15 @@ Check undefined result
 Check if result is in scientific notation
     Element Should Contain Text      ${display}      E
 
+Check negative result
+    Element Should Contain Text      ${display}      -7.0
+
+Negative addition operation
+    Click Element       ${subtract}
+    Click Element       ${nine}
+    Click Element       ${multiply}
+    Click Element       ${two}
+
 Show result
     Click Element       ${result}
 

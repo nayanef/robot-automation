@@ -1,11 +1,11 @@
 ***Settings***
 Library         AppiumLibrary
 Resource        ../Resources/global.robot
-Resource        ../Keywords/addition.robot
+Resource        ../Keywords/exponent.robot
 
 ***Test Cases***
 
-Simple addition
+Simple exponent
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
@@ -13,16 +13,16 @@ Simple addition
     ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
     ...                 udid=emulator-5554
 
-    Add operation
+    Exponent operation
     Show result
     Check result
 
     Capture Page Screenshot
     Close Application
 
-# Abrindo um parentese e não fechando, deve apresentar NaN
-Single parenthesis addition error
 
+# Qualquer número elevado a -1 resulta em 1/número
+Exponent to negative one
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
@@ -30,17 +30,15 @@ Single parenthesis addition error
     ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
     ...                 udid=emulator-5554
 
-    Single parenthesis operation
+    
+    Exponent to negative one
     Show result
-    Check undefined result
+    Check negative one result
 
     Capture Page Screenshot
     Close Application
 
-
-# Apenas clicar em "igual" e apresentar NaN
-Pressing just the equals button
-
+Exponent with a result in scientific notation
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
@@ -48,31 +46,15 @@ Pressing just the equals button
     ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
     ...                 udid=emulator-5554
 
-    Show result
-    Check undefined result
-
-    Capture Page Screenshot
-    Close Application
-
-
-# Notação científica quando resultado é muito grande
-Addition with a scientific notation result
-    Open Application    http://localhost:4723/wd/hub
-    ...                 automationName=UiAutomator2
-    ...                 platformName=Android
-    ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
-    ...                 udid=emulator-5554
-
-    Add big numbers
+    
+    Exponent to a big negative number
     Show result
     Check if result is in scientific notation
 
     Capture Page Screenshot
-    Close Application
+    Close Application 
 
-
-Addition with a negative number
+Exponent with an infinity result
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
@@ -80,11 +62,10 @@ Addition with a negative number
     ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
     ...                 udid=emulator-5554
 
-    Negative addition operation
+    
+    Exponent to 999
     Show result
-    Check negative result
+    Check if result is infinity
 
     Capture Page Screenshot
-    Close Application
-
-
+    Close Application 
