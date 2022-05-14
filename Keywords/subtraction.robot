@@ -10,6 +10,13 @@ Subtraction operation
     Click Element       ${subtract}
     Click Element       ${six}
 
+Triple subtraction symbols
+    Click Element       ${nine}
+    Click Element       ${subtract}
+    Click Element       ${subtract}
+    Click Element       ${subtract}
+    Click Element       ${six}
+
 Subtract big numbers
     Click Element       ${nine}
     Click Element       ${subtract}
@@ -30,6 +37,11 @@ Subtract big numbers
     Click Element       ${two}
     Click Element       ${two}
 
+Single parenthesis operation
+    Click Element       ${parenthesis}
+    Click Element       ${one}
+    Click Element       ${subtract}
+    Click Element       ${two}
 
 Check result
     Element Text Should Be      ${display}      3.0

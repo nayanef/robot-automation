@@ -4,10 +4,21 @@ Resource        ../Resources/global.robot
 
 ***Keywords***
 
+Add exponent
+    Click Element       ${add}
+    Click Element       ${exponent}
+    Click Element       ${two}
+
+Dot exponent
+    Click Element       ${dot}
+    Click Element       ${exponent}
+    Click Element       ${two}
+
 Exponent operation
     Click Element       ${five}
     Click Element       ${exponent}
     Click Element       ${two}
+
 
 Exponent to negative one
     Click Element       ${five}
@@ -28,6 +39,10 @@ Exponent to 999
     Click Element       ${nine}
     Click Element       ${nine}
 
+Number to no exponent
+    Click Element       ${five}
+    Click Element       ${exponent}
+
 Check if result is infinity
     Element Should Contain Text      ${display}      Infinity
 
@@ -44,6 +59,10 @@ Check negative one result
 
 Check undefined result
     Element Text Should Be      ${display}      NaN
+
+Only the exponent sign
+    Click Element       ${exponent}
+
 
 Show result
     Click Element       ${result}

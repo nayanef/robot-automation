@@ -39,6 +39,9 @@ Add big numbers
 Check result
     Element Text Should Be      ${display}      3.0
 
+Check parenthesis result
+    Element Text Should Be      ${display}      3.0
+
 Check undefined result
     Element Text Should Be      ${display}      NaN
 
@@ -61,5 +64,19 @@ Single parenthesis operation
     Click Element       ${parenthesis}
     Click Element       ${one}
     Click Element       ${add}
+    Click Element       ${two}
+
+
+Parenthesis operation
+    Click Element       ${parenthesis}
+    Click Element       ${one}
+    Click Element       ${add}
+    Click Element       ${two}
+    Click Element       ${parenthesis}
+
+Press add and exponent
+    Click Element       ${one}
+    Click Element       ${add}
+    Click Element       ${exponent}
     Click Element       ${two}
 
