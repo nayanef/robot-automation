@@ -1,5 +1,6 @@
 ***Settings***
 Library         AppiumLibrary
+Library         ../Resources/libs/extend.py
 Resource        ../Resources/global.robot
 Resource        ../Keywords/addition.robot
 
@@ -13,7 +14,7 @@ Simple addition
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Add operation
@@ -31,10 +32,10 @@ Addition with a scientific notation result
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
-    Add big numbers
+    Add big numbers alt
     Show result
     Check if result is in scientific notation
 
@@ -48,7 +49,7 @@ Addition with a negative number
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Negative addition operation
@@ -67,7 +68,7 @@ Pressing add and exponent
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Press add and exponent
@@ -85,7 +86,7 @@ Pressing just the equals button
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Show result
@@ -105,7 +106,7 @@ Parenthesis addition
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Parenthesis operation
@@ -124,7 +125,7 @@ Single parenthesis addition error
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Single parenthesis operation

@@ -1,5 +1,6 @@
 ***Settings***
 Resource        ../Resources/global.robot
+Library         ../Resources/libs/extend.py
 
 
 ***Keywords***
@@ -35,6 +36,9 @@ Add big numbers
     Click Element       ${two}
     Click Element       ${two}
     Click Element       ${two}
+
+Add big numbers alt
+    Big numbers operation       ${nine_id}     ${two_id}      ${add_id}
 
 Check result
     Element Text Should Be      ${display}      3.0

@@ -5,18 +5,44 @@ from appium.webdriver.common.touch_action import TouchAction
 
 # repetir número passado nos parametros
 
-@keyword(name='Nome keyword')
-def function(id_target):
+@keyword(name='Big numbers operation')
+def function(num_x,num_y,op):
     appiumLib = BuiltIn().get_library_instance("AppiumLibrary")
     driver = appiumLib._current_application()
+    print("TEST TEST TEST")
 
-    element = driver.find_element_by_id(id_target)
-    
+    el_x = driver.find_element_by_id(num_x)
+    el_y = driver.find_element_by_id(num_y)
+    el_op = driver.find_element_by_id(op)
+
 
     actions = TouchAction(driver)
-    #actions.long_press(ele_origin, None, None, 3000).move_to(ele_target)
-    actions.release()
-    actions.perform()
+    
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+    actions.tap(el_x).release().perform()
+
+    actions.tap(el_op).release().perform()
+  
+    actions.tap(el_y).release().perform() 
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+    actions.tap(el_y).release().perform()
+
 
 
 
