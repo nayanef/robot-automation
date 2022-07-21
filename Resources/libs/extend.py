@@ -9,7 +9,6 @@ from appium.webdriver.common.touch_action import TouchAction
 def function(num_x,num_y,op):
     appiumLib = BuiltIn().get_library_instance("AppiumLibrary")
     driver = appiumLib._current_application()
-    print("TEST TEST TEST")
 
     el_x = driver.find_element_by_id(num_x)
     el_y = driver.find_element_by_id(num_y)
@@ -41,7 +40,7 @@ def function(num_x,num_y,op):
     actions.tap(el_y).release().perform()
     actions.tap(el_y).release().perform()
     actions.tap(el_y).release().perform()
-    actions.tap(el_y).release().perform()
+    
 
 
 

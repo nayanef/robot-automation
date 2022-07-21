@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220604 20:40:29.746" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220710 17:21:22.522" rpa="false" schemaversion="3">
 <suite id="s1" name="Addition" source="C:\Users\nayan\OneDrive\Área de Trabalho\Ufal\tcc\robot-automation\Tests\addition.robot">
-<test id="s1-t1" name="Addition with a scientific notation result" line="30">
+<test id="s1-t1" name="Addition with a scientific notation result" line="29">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>automationName=UiAutomator2</arg>
@@ -15,49 +15,48 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220604 20:40:30.167" endtime="20220604 20:40:49.775"/>
+<status status="PASS" starttime="20220710 17:21:22.881" endtime="20220710 17:21:42.530"/>
 </kw>
 <kw name="Add big numbers alt" library="addition">
 <kw name="Big numbers operation" library="extend">
 <arg>${nine_id}</arg>
 <arg>${two_id}</arg>
 <arg>${add_id}</arg>
-<msg timestamp="20220604 20:41:06.790" level="INFO">TEST TEST TEST</msg>
-<status status="PASS" starttime="20220604 20:40:49.782" endtime="20220604 20:41:06.790"/>
+<status status="PASS" starttime="20220710 17:21:42.533" endtime="20220710 17:21:58.291"/>
 </kw>
-<status status="PASS" starttime="20220604 20:40:49.781" endtime="20220604 20:41:06.791"/>
+<status status="PASS" starttime="20220710 17:21:42.532" endtime="20220710 17:21:58.292"/>
 </kw>
 <kw name="Show result" library="addition">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${result}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220604 20:41:06.802" level="INFO">Clicking element 'id=com.example.appexemplo:id/equalsBTN'.</msg>
-<status status="PASS" starttime="20220604 20:41:06.793" endtime="20220604 20:41:06.941"/>
+<msg timestamp="20220710 17:21:58.299" level="INFO">Clicking element 'id=com.example.appexemplo:id/equalsBTN'.</msg>
+<status status="PASS" starttime="20220710 17:21:58.293" endtime="20220710 17:21:59.029"/>
 </kw>
-<status status="PASS" starttime="20220604 20:41:06.792" endtime="20220604 20:41:06.941"/>
+<status status="PASS" starttime="20220710 17:21:58.292" endtime="20220710 17:21:59.030"/>
 </kw>
 <kw name="Check if result is in scientific notation" library="addition">
 <kw name="Element Should Contain Text" library="AppiumLibrary">
 <arg>${display}</arg>
 <arg>E</arg>
 <doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220604 20:41:06.949" level="INFO">Verifying element 'id=com.example.appexemplo:id/input' contains text 'E'.</msg>
-<status status="PASS" starttime="20220604 20:41:06.943" endtime="20220604 20:41:07.828"/>
+<msg timestamp="20220710 17:21:59.041" level="INFO">Verifying element 'id=com.example.appexemplo:id/input' contains text 'E'.</msg>
+<status status="PASS" starttime="20220710 17:21:59.035" endtime="20220710 17:21:59.872"/>
 </kw>
-<status status="PASS" starttime="20220604 20:41:06.942" endtime="20220604 20:41:07.828"/>
+<status status="PASS" starttime="20220710 17:21:59.035" endtime="20220710 17:21:59.873"/>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220604 20:41:08.327" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220604 20:41:07.830" endtime="20220604 20:41:08.327"/>
+<msg timestamp="20220710 17:22:00.333" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220710 17:21:59.874" endtime="20220710 17:22:00.334"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220604 20:41:08.328" endtime="20220604 20:41:09.839"/>
+<status status="PASS" starttime="20220710 17:22:00.334" endtime="20220710 17:22:01.418"/>
 </kw>
-<status status="PASS" starttime="20220604 20:40:30.166" endtime="20220604 20:41:09.846"/>
+<status status="PASS" starttime="20220710 17:21:22.881" endtime="20220710 17:22:01.419"/>
 </test>
-<status status="PASS" starttime="20220604 20:40:29.749" endtime="20220604 20:41:09.850"/>
+<status status="PASS" starttime="20220710 17:21:22.524" endtime="20220710 17:22:01.420"/>
 </suite>
 <statistics>
 <total>

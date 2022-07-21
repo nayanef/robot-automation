@@ -13,7 +13,7 @@ Simple division
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Simple division
@@ -29,7 +29,7 @@ Division by zero
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
     ...                 deviceName=Emulator
-    ...                 app=C:/Users/nayan/Desktop/Ufal/tcc/robot-automation/apk/app-debug.apk
+    ...                 app=C:/tcc/apk/app-debug.apk
     ...                 udid=emulator-5554
 
     Divide by zero

@@ -58,7 +58,7 @@ Check negative result
 Negative addition operation
     Click Element       ${subtract}
     Click Element       ${nine}
-    Click Element       ${multiply}
+    Click Element       ${add}
     Click Element       ${two}
 
 Show result

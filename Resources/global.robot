@@ -3,7 +3,6 @@ Library         libs/extend.py
 
 ***Variables***
 
-
 # numpad
 
 ${zero}=                   id=com.example.appexemplo:id/zeroBTN

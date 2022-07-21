@@ -6,7 +6,7 @@ Resource        ../Keywords/addition.robot
 
 ***Test Cases***
 
-#ADDITION
+#ADIÇÃO
 
 #OK
 Simple addition
@@ -26,7 +26,6 @@ Simple addition
 
 
 # OK
-# Notação científica quando resultado é muito grande
 Addition with a scientific notation result
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
@@ -43,7 +42,6 @@ Addition with a scientific notation result
     Close Application
 
 # OK
-# Número negativo
 Addition with a negative number
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
@@ -62,7 +60,6 @@ Addition with a negative number
 
 
 # ERRO
-# pressionando sinal de mais e expoente em seguida
 Pressing add and exponent
     Open Application    http://localhost:4723/wd/hub
     ...                 automationName=UiAutomator2
@@ -79,7 +76,6 @@ Pressing add and exponent
     Close Application
 
 # ERRO
-# Apenas clicar em "igual" e apresentar NaN
 Pressing just the equals button
 
     Open Application    http://localhost:4723/wd/hub
@@ -96,29 +92,8 @@ Pressing just the equals button
     Close Application
 
 
-#PARENTESIS
-
-# OK
-# Operação com parentesis
-Parenthesis addition
-
-    Open Application    http://localhost:4723/wd/hub
-    ...                 automationName=UiAutomator2
-    ...                 platformName=Android
-    ...                 deviceName=Emulator
-    ...                 app=C:/tcc/apk/app-debug.apk
-    ...                 udid=emulator-5554
-
-    Parenthesis operation
-    Show result
-    Check parenthesis result
-
-    Capture Page Screenshot
-    Close Application
-
 
 # ERRO
-# Operação com apenas um parentesis
 Single parenthesis addition error
 
     Open Application    http://localhost:4723/wd/hub
